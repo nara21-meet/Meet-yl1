@@ -19,7 +19,8 @@ class User():
         self.friends_list=[]
         self.posts=[]
     
-    def post(self,text):
+    def post(self,text):  
+        self.self=self
         self.text=text
         self.posts.append(text)
         print(self.name+"has posted"+text)
@@ -31,7 +32,8 @@ class User():
     def add_friend(self,email):
         self.email=email
         self.friends_list.append(email)
-        print(self.name+"has added"+self.email+"as a friend")
+        print(self.name+"has added"+ self.email+"as a freind")
+    
  
     def remove_friend(self,email):
         self.email=email
@@ -61,6 +63,16 @@ Daniel.remove_friend("Jack24@meet.mit.edu")
 user=[]
 post=[]
 
+class user():
 
+    def __init__ (self,like,unlike):
+        self.self=self
+        self.like=like
+        self.unlike=unlike
 
-   
+    def like(self,post,like):
+        self.like+self.email
+
+    def unlike(self, post):
+        self .unlike+self.email
+
